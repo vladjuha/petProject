@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+    margin: 0;
+    font-family: Lato, sans-serif;
+}
+
+.header{
+    background: #222222;
+    height: 74px;
+    padding: 18px 16px;
+    box-sizing: border-box;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    @media(min-width: 1600px) {
+        .container{
+            margin: 0 auto;
+            width: 1140px;
+        }
+    }
+
+    @media (min-width: 768px){
+        .header{
+            padding: 18px 32px;
+        }
+    }
+
+        .userIcon,
+        .cartIconWrap{
+            display: none;
+}
+
+.searchIcon{
+    margin-left: 41px;
+}
+
+@media (min-width: 768px){
+    .userIcon,
+    .cartIconWrap{
+    display: inline;
+    }
+}
+
+.userIcon{
+    margin-left: 25px;
+    margin-right: 42px;
+}
+
+.cartIconWrap{
+    position: relative;
+}
+
+.cartIconWrap span{
+    
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    color: white;
+    background: #F16D7F;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    right: -8px;
+    top: -23px;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.brandWrap {
+    min-height: 363px;
+}
+@media ( min-width: 768px){
+    .brandWrap {
+        display: flex;
+    }
+
+    .brandWrap > div{
+        width: 50%;
+    }
+}
+
+
+.brandRight{
+    background: #F1E4E6;
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.brandPromoWrap{
+    border-left: 12px solid #F16D7F;
+    height: 62px;
+    padding-left: 15px;
+}
+
+.brandPromoWrap div:first-child {
+    font-weight: 900;
+    font-size: 38px;
+    line-height: 27px;
+    color: #222222;
+
+}
+
+@media (min-width: 768px) {
+    .brandPromoWrap div:first-child {
+        font-size: 44px;
+        line-height: 33px;
+    }
+    .brandPromoWrap{
+        height: 68px;
+        
+    }
+}
+
+@media (min-width: 1600px) {
+    .brandPromoWrap div:first-child {
+        font-size: 48px;
+        line-height: 33px;
+    }
+    .brandPromoWrap{
+        height: 68px;
+        
+    }
+}
+
+
+.brandPromoWrap div:last-child{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #222222;
+    font-weight: bold;
+    margin-top: 14px;
+}
+
+.brandPromoWrap div:last-child span{
+    color: #F16D7F;
+}
+.brandLeft img {
+    display: block;
+    width: 100%;
+}
+
+.brandLeft{
+    display: none;
+    }
+
+@media ( min-width: 768px){
+    .brandLeft{
+        display: block;
+    }
+}
+
+.mainMenu{
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+}
