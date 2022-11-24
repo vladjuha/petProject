@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Lato, sans-serif;
+}
+
+.header{
+    background: #222222;
+    height: 74px;
+    padding: 18px 16px;
+    box-sizing: border-box;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    @media(min-width: 1600px) {
+        .container{
+            margin: 0 auto;
+            width: 1140px;
+        }
+    }
+
+    @media (min-width: 768px){
+        .header{
+            padding: 18px 32px;
+        }
+    }
+
+        .userIcon,
+        .cartIconWrap{
+            display: none;
+}
+
+.searchIcon{
+    margin-left: 41px;
+}
+
+@media (min-width: 768px){
+    .userIcon,
+    .cartIconWrap{
+    display: inline;
+    }
+}
+
+.userIcon{
+    margin-left: 25px;
+    margin-right: 42px;
+}
+
+.cartIconWrap{
+    position: relative;
+}
+
+.cartIconWrap span{
+    
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    color: white;
+    background: #F16D7F;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    right: -8px;
+    top: -23px;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.brandWrap {
+    min-height: 363px;
+    position: relative;
+}
+
+.brandInsideWrap{
+    min-height: inherit;
+}
+
+@media ( min-width: 768px){
+    .brandInsideWrap {
+        display: flex;
+    }
+
+    .brandInsideWrap > div{
+        width: 50%;
+    }
+}
+
+
+.brandRight{
+    background: #F1E4E6;
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.brandPromoWrap{
+    border-left: 12px solid #F16D7F;
+    height: 62px;
+    padding-left: 15px;
+}
+
+.brandPromoWrap div:first-child {
+    font-weight: 900;
+    font-size: 38px;
+    line-height: 27px;
+    color: #222222;
+
+}
+
+@media (min-width: 768px) {
+    .brandPromoWrap div:first-child {
+        font-size: 44px;
+        line-height: 33px;
+    }
+    .brandPromoWrap{
+        height: 68px;
+        
+    }
+}
+
+@media (min-width: 1600px) {
+    .brandPromoWrap div:first-child {
+        font-size: 48px;
+        line-height: 33px;
+    }
+    .brandPromoWrap{
+        height: 68px;
+        
+    }
+}
+
+
+.brandPromoWrap div:last-child{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #222222;
+    font-weight: bold;
+    margin-top: 14px;
+}
+
+.brandPromoWrap div:last-child span{
+    color: #F16D7F;
+}
+.brandLeft img {
+    display: block;
+    width: 100%;
+}
+
+.brandLeft{
+    display: none;
+    
+    }
+
+@media ( min-width: 768px){
+    .brandLeft{
+        display: block;
+    }
+}
+
+
+.brandDark{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hidden{
+    display: none;
+}
+
+
+.mainMenu{
+    width: 232px;
+    height: inherit;
+    background-color: white;
+    margin-left: auto;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding: 37px 24px;
+    box-sizing: border-box;
+    min-height: inherit;
+    overflow: auto;
+    
+}
+
+.mainMenu .menuTitle{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 18px;
+    
+} 
+
+.menuHeader{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 33px;
+    color: #F16D7F;
+    }
+
+.menuUnit a{
+    display: block;
+    font-size: 14px;
+    line-height: 33px;
+    color: #6F6E6E;
+    text-decoration: none;
+    margin-left: 21px;
+}
+
+.menuClose{
+    position: absolute;
+    left: 98.19%;
+    right: 1.06%;
+    top: 2.38%;
+    bottom: 97.31%;
+    background: #6F6E6E;
+    background-color: white;
+}
+
+.offers{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 247px) 111px;
+    row-gap: 32px;
+    padding: 64px 16px;
+}
+
+.offers > div{
+    position: relative;
+}
+
+.offers img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+@media (min-width: 768px){
+    .offers{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 167px 116px;
+        grid-gap: 20px;
+    }
+    .offerAccessoires{
+        grid-column: 1/-1;
+    }
+}
+
+.offerTitle{
+    position: relative;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 16px;
+    text-align: center;
+        
+}
+
+.offerTitleTop{
+color: white;
+
+
+
+}
+
+.offerTitleButtom{
+    color: #F16D7F; 
+    font-weight: 700px;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.featured{
+    text-align: center;
+}
+
+
+.featuredItem{
+    width: 100%;
+    
+}
+
+.featuredItem img {
+    width: 100%;
+    display: block;
+}
+
+.featured h2{
+    margin-bottom: 3px;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.featuredItemsText{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    
+}
+
+.featuredItemsList{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.featuredDescription{
+    text-align:left;
+    padding-left: 26px;
+    background: rgba(0, 0, 0, 0.068);
+    
+}
+
+.itemDescriptionTop{
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    padding-bottom: 13px;
+    padding-top: 25px;
+    font-weight: 700;
+    
+}
+
+.itemDescriptionButtom{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    
+}
+
+.featuredPrice{
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+    padding-bottom: 20px;
+}
+
+.featuredImgWrap{
+    position: relative;
+}
+
+.featuredImgDark{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(58, 56, 56, 0.86);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featuredImgDark button{
+    background: none;
+    border: 1px solid white;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 14px;
+    font-style: 14px;
+    font-family: inherit;
+}
+
+.featuredImgDark img {
+    width: 26px;
+    margin-right: 11px;
+}
